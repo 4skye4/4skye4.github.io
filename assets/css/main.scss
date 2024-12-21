@@ -9,7 +9,6 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 @import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap');
 //@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
 
-@import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
 //@import 'font-awesome.min.css';
@@ -18,6 +17,7 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 @import "/assets/bootstrap/css/bootstrap-utilities.css";
 @import "/assets/bootstrap/css/bootstrap-reboot.css";
 @import "external/font-awesome";
+@import 'libs/vars';
 
 @import "common";
 @import 'map';
@@ -53,7 +53,7 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 	}
 
 	body {
-		background: _palette(bg);
+		background: _palette(fg-bold);
 
 		&.is-loading {
 			*, *:before, *:after {
@@ -1003,9 +1003,9 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 		@for $i from 1 through _misc(max-spotlights) {
 			$j: 0.075 * $i;
 
-			&:nth-child(#{$i}) {
-				background-color: rgba(0,0,0, $j);
-			}
+			//&:nth-child(#{$i}) {
+			//	background-color: rgba(0,0,0, $j);
+			//}
 		}
 
 		@include breakpoint(large) {
@@ -1213,12 +1213,13 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 				color: _palette($p, fg-bold);
 
 				&:hover {
-					background-color: _palette($p, border-bg);
+					//background-color: _palette($p, border-bg);
+					color: var(--bs-link-hover-color);
 				}
-
-				&:active {
-					background-color: _palette($p, border2-bg);
-				}
+				//
+				//&:active {
+				//	background-color: _palette($p, border2-bg);
+				//}
 			}
 
 		// Features
@@ -1265,8 +1266,6 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 					width: 100%;
 					height: 2px;
 					background-color: _palette(accent1, border);
-					//margin-top: 1em;
-					//margin-bottom: 1em;
 				}
 			}
 		}
@@ -1304,7 +1303,7 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 		padding-top: 3em;
 
 		&:before {
-			background: rgba(0,0,0,0);
+			background: rgba(1,1,1,1);
 			content: '';
 			display: block;
 			display: none;
@@ -1391,6 +1390,7 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 
 			&:before {
 				display: block;
+				opacity: 0.35;
 			}
 		}
 
@@ -1404,6 +1404,7 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 	#header {
 		@include vendor('transition', 'background-color #{_duration(transitions)} ease');
 		background: _palette(bg);
+		box-shadow: 0px -10px 24px 0px #42445a;
 		height: 3em;
 		left: 0;
 		line-height: 3em;
@@ -1463,7 +1464,7 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 							position: relative;
 
 							&:after {
-								background-image: url('images/bars.svg');
+								background-image: url('images/bars-black.svg');
 								background-position: right center;
 								background-repeat: no-repeat;
 								content: '';
@@ -1496,10 +1497,28 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 
 		&.alt {
 			background: transparent;
+			box-shadow: none;
 
 			h1 {
 				@include vendor('pointer-events', 'none');
 				opacity: 0;
+			}
+
+			nav {
+				> ul {
+					> li {
+						> a {
+							border: 0;
+							color: _palette(bg);
+
+							&.menuToggle {
+								&:after {
+									background-image: url('images/bars-white.svg');
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -1517,9 +1536,21 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 		position: relative;
 		text-align: center;
 
+		&:after {
+			background: #000000;
+			content: '';
+			height: 100%;
+			left: 0;
+			opacity: 0.5;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
 		h2 {
 			@include vendor('transform', 'scale(1)');
 			@include vendor('transition', ('transform 0.5s ease', 'opacity 0.5s ease'));
+			color: _palette(bg);
 			display: inline-block;
 			font-size: 3em;
 			opacity: 1;
@@ -1530,7 +1561,7 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 			&:before, &:after {
 				@include vendor('transition', 'width 0.85s ease');
 				@include vendor('transition-delay', '0.25s');
-				background: _palette(fg-bold);
+				background: _palette(bg);
 				content: '';
 				display: block;
 				height: 2px;
@@ -1552,10 +1583,11 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 		p {
 			letter-spacing: _size(letter-spacing-alt);
 			//text-transform: uppercase;
+			color: _palette(bg);
 			font-size: 2em;
 
 			a {
-				color: inherit;
+				color: _palette(bg);
 			}
 		}
 
@@ -1565,7 +1597,7 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 			@include vendor('transform', 'translateY(0)');
 			border: none;
 			bottom: 0;
-			color: inherit;
+			color: _palette(bg);
 			font-size: 0.8em;
 			height: 8.5em;
 			left: 50%;
@@ -1601,7 +1633,7 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 			@include vendor('transition', 'opacity #{_duration(fadein)} ease-in-out');
 			@include vendor('transition-delay', '1.25s');
 			content: '';
-			background: _palette(bg);
+			background: _palette(fg-bold);
 			display: block;
 			width: 100%;
 			height: 100%;
@@ -1842,7 +1874,7 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 		}
 
 		#footer {
-			background-color: darken(transparentize(_palette(bg), 0.1), 8);
+			background-color: darken(transparentize(_palette(fg-bold), 0.1), 8);
 		}
 	}
 

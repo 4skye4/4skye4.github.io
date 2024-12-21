@@ -4,8 +4,8 @@ layout: landing
 <!-- Banner -->
 <section id="banner">
     <div class="inner">
-        <!--        TODO: not capitalize for "I"-->
-        <h2 style="font-family: 'Gwendolyn',sans-serif; text-transform: none !important;">{{ site.title }}</h2>
+        <!--        TODO: DONE not capitalize for "I"-->
+        <h2 style="font-family: 'Gwendolyn', sans-serif; text-transform: none !important;">{{ site.title }}</h2>
         <!--        <p>{{ site.description | markdownify }}</p>-->
         <p>14 czerwca 2025</p>
         <!--        <ul class="actions">-->
@@ -146,11 +146,12 @@ layout: landing
         </div>
     </section>
 
-    <section class="spotlight">
-        <!--        TODO: wywalic lewa strone -->
-        <!--        <div class="image"><img src="/assets/imgs/onecoinonejar.jpg"-->
-        <!--                                alt=""/></div>-->
-        <div class="content pb-4">
+</section>
+
+<section id="charity"
+         class="wrapper style1 with-separator special">
+    <div class="inner">
+        <header class="major">
             <h2>Fundacja</h2>
             <p>Wspólnie z Wami pragniemy pomóc. Będziemy wdzięczni, jeśli zamiast kwiatów, zdecydujecie się wesprzeć
                 naszą zbiórkę na rzecz Fundacji Dom w Łodzi. Pieniądze będziemy zbierać do puszki przed kościołem.</p>
@@ -161,18 +162,8 @@ layout: landing
             <a href="https://www.domwlodzi.org/pl/"
                target="_blank"
                class="button small mb-3">Więcej o fundacji</a>
-        </div>
-    </section>
-    <!--    <section class="spotlight">-->
-    <!--        <div class="image"><img src="/assets/imgs/pic03.jpg"-->
-    <!--                                alt=""/></div>-->
-    <!--        <div class="content">-->
-    <!--            <h2>Augue eleifend aliquet<br/>-->
-    <!--                sed condimentum</h2>-->
-    <!--            <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam-->
-    <!--                aenean mi ligula.</p>-->
-    <!--        </div>-->
-    <!--    </section>-->
+        </header>
+    </div>
 </section>
 
 <section id="accomodation"
@@ -198,7 +189,7 @@ layout: landing
 </section>
 
 <section id="contact"
-         class="wrapper style1 with-separator special">
+         class="wrapper style1 special">
     <div class="inner">
         <header>
             <h2>Arcue ut vel commodo</h2>
@@ -211,6 +202,17 @@ layout: landing
                    class="button fit">Learn More</a></li>
         </ul>
     </div>
+
+    <script>
+        $('#contact').ready(function () {
+            $('#contact ul li').each(function () {
+                let text = $(this).text();
+                // let encodedText = rot(11, 5, text);
+                let encodedText = rot(-11, -5, text);
+                $(this).text(encodedText);
+            });
+        });
+    </script>
 </section>
 
 <!--&lt;!&ndash; Two &ndash;&gt;-->

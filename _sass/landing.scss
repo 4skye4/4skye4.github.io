@@ -1,14 +1,17 @@
 #churchImg {
   background-image: url("/assets/imgs/church.jpg") !important;
-  //@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/assets/imgs/church.jpg")'));
 }
 
 #palaceImg {
   background-image: url("/assets/imgs/palace.jpg") !important;
-  //@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/assets/imgs/palace.jpg")'));
 }
 
 #moneyImg {
   background-image: url("/assets/imgs/onecoinonejar.jpg") !important;
-  //@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/assets/imgs/palace.jpg")'));
+}
+
+#contact {
+  li::marker {
+    content: '';
+  }
 }
