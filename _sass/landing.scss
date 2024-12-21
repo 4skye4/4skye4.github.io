@@ -46,6 +46,13 @@
 }
 
 #contact {
+  #showContactInfo {
+    padding: 1rem 1rem;
+    line-height: inherit;
+    text-wrap: wrap;
+    height: auto;
+  }
+
   li {
     padding-left: 0;
   }
