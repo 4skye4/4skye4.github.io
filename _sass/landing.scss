@@ -50,3 +50,10 @@
     content: '';
   }
 }
+
+#footImg {
+  background-image: url("/assets/imgs/footer.jpg") !important;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
