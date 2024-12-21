@@ -46,6 +46,10 @@
 }
 
 #contact {
+  li {
+    padding-left: 0;
+  }
+
   li::marker {
     content: '';
   }
