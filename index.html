@@ -59,7 +59,7 @@ layout: landing
         <div class="image">
             {% include map.html %}
         </div>
-        <div class="content">
+        <div class="content py-lg-5 my-lg-5">
             <h2>Ślub</h2>
             <div class="d-flex flex-column gap-2 mb-5">
                 Ślub odbędzie się 14 czerwca 2025 roku o godzinie 16:00 w Sanktuarium Matki Bożej Miłosiernej w Białej
@@ -92,7 +92,7 @@ layout: landing
         <div class="image">
             {% include map-palace.html %}
         </div>
-        <div class="content">
+        <div class="content py-lg-5 my-lg-5">
             <h2>Wesele</h2>
             <div class="d-flex flex-column gap-2 mb-5">
                 Po ceremonii zapraszamy do wspólnego świętowania. Przyjęcie weselne odbędzie się w Pałacu Chojnata w
@@ -215,9 +215,9 @@ layout: landing
 <script type="module">
     import SimpleParallax from "/assets/js/simpleparallax/index.js";
 
-    if (skel.vars.mobile) {
+    // if (skel.vars.mobile) {
         $('.img-bg-responsive').addClass('parallax-img');
-    }
+    // }
     const image = document.getElementsByClassName('parallax-img');
     new SimpleParallax(image, {
         scale: '1.2',

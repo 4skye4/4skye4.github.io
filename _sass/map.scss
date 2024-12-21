@@ -2,13 +2,13 @@ $container-max-heights: (
         sm: 15vh,
         md: 20vh,
         lg: 25vh,
-        xl: 30vh,
-        xxl: 30vh
+        xl: 35vh,
+        xxl: 40vh
 );
 
 @mixin make-map-responsive() {
   //width: 100%;
-  height: 30vh;
+  height: 40vh;
 }
 
 .map-responsive {
