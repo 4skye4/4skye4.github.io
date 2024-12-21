@@ -46,6 +46,25 @@
     const rot18 = (str) => rot(13, 5, str);
 
 
+    const info =
+        "                <h5>Para młoda</h5>\n" +
+        "            <ul>\n" +
+        "                <li>Dlyocl epw. 085 393 532</li>\n" +
+        "                <li>Clqlł epw. 020 212 179</li>\n" +
+        "            </ul>\n" +
+        "            <p>W dniu uroczystości prosimy o kontakt z&nbsp;Rodzicami lub&nbsp;Świadkami</p>\n" +
+        "            <h5>Świadkowie</h5>\n" +
+        "            <ul>\n" +
+        "                <li>Xtnslwtyl epw. 054 018 307</li>\n" +
+        "                <li>Trzc epw. 020 705 138</li>\n" +
+        "            </ul>\n" +
+        "            <h5>Rodzice</h5>\n" +
+        "            <ul>\n" +
+        "                <li>Cpylel epw. 151 379 201</li>\n" +
+        "                <li>Thzyl epw. 056 516 248</li>\n" +
+        "                <li>Lwpvdlyopc epw. 059 719 170</li>\n" +
+        "            </ul>";
+
     // const encodedEmail = rot(13, 3, "mail@example.com");
     // const decodedMail = rot(-13, -3, encodedEmail);
     // console.log(encodedEmail)
