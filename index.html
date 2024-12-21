@@ -1,6 +1,8 @@
 ---
 layout: landing
 ---
+
+
 <!-- Banner -->
 <section id="banner">
     <div class="inner">
@@ -32,7 +34,8 @@ layout: landing
                 Po ceremonii zapraszamy do&nbsp;wspólnego świętowania.
                 <br>
                 Przyjęcie weselne odbędzie się w&nbsp;Pałacu&nbsp;Chojnata w&nbsp;Woli-Chojnata&nbsp;59.</p>
-            <p><b>Drodzy Goście, uprzejmie prosimy o&nbsp;potwierdzenie przybycia do dnia 30&nbsp;kwietnia&nbsp;2025&nbsp;roku.</b></p>
+            <p><b>Drodzy Goście, uprzejmie prosimy o&nbsp;potwierdzenie przybycia do dnia 30&nbsp;kwietnia&nbsp;2025&nbsp;roku.</b>
+            </p>
         </header>
         <!--        <ul class="icons major">-->
         <!--            <li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>-->
@@ -201,5 +204,18 @@ layout: landing
 <script>
     $('document').ready(function () {
         $('.leaflet-control-attribution').hide();
+    });
+
+</script>
+
+<script type="module">
+    import SimpleParallax from "/assets/js/simpleparallax/index.js";
+
+    if (skel.vars.mobile) {
+        $('.img-bg-responsive').addClass('parallax-img');
+    }
+    const image = document.getElementsByClassName('parallax-img');
+    new SimpleParallax(image, {
+        scale: '1.2'
     });
 </script>

@@ -46,10 +46,10 @@
     const rot18 = (str) => rot(13, 5, str);
 
 
-    const encodedEmail = rot(13, 3, "mail@example.com");
-    const decodedMail = rot(-13, -3, encodedEmail);
-    console.log(encodedEmail)
-    console.log(decodedMail);
+    // const encodedEmail = rot(13, 3, "mail@example.com");
+    // const decodedMail = rot(-13, -3, encodedEmail);
+    // console.log(encodedEmail)
+    // console.log(decodedMail);
 // })(jQuery);
 
 
