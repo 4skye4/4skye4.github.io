@@ -5,6 +5,10 @@
 
 $baseurl: '{{ site.baseurl }}/assets/imgs';
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap');
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
+
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
@@ -14,9 +18,6 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 @import "/assets/bootstrap/css/bootstrap-utilities.css";
 @import "/assets/bootstrap/css/bootstrap-reboot.css";
 @import "external/font-awesome";
-//@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap');
 
 @import "common";
 @import 'map';
@@ -1254,6 +1255,20 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 
 		&.style1 {
 			@include wrapper(accent1);
+			padding-top: 4em;
+			padding-bottom: 0.5em;
+
+			&.with-separator{
+				&:after {
+					content: '';
+					display: block;
+					width: 100%;
+					height: 2px;
+					background-color: _palette(accent1, border);
+					//margin-top: 1em;
+					//margin-bottom: 1em;
+				}
+			}
 		}
 
 		&.style2 {
