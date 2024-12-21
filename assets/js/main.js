@@ -33,8 +33,9 @@
 			});
 
 		// Mobile?
-			if (skel.vars.mobile)
+			if (skel.vars.mobile) {
 				$body.addClass('is-mobile');
+			}
 			else
 				skel
 					.on('-medium !medium', function() {
