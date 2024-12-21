@@ -1614,7 +1614,7 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 			@include vendor('transition-delay', '3.5s');
 			@include vendor('transform', 'translateY(0)');
 			border: none;
-			bottom: 0;
+			bottom: 2rem;
 			color: _palette(bg);
 			font-size: 0.8em;
 			height: 8.5em;
