@@ -1916,7 +1916,7 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 			}
 
 			#footer {
-				background-color: darken(_palette(bg), 8);
+				background-color: darken(_palette(fg-bold), 8);
 			}
 		}
 	}
