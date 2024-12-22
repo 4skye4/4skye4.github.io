@@ -1,0 +1,14 @@
+$max-content-width: 120em;
+
+$container-max-widths: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px
+);
+
+@mixin transition-smooth() {
+  transition: all 1s ease-in-out; // Smooth transition when adding classes
+}

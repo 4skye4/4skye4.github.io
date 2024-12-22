@@ -1,0 +1,33 @@
+$container-max-heights: (
+        sm: 15vh,
+        md: 20vh,
+        lg: 25vh,
+        xl: 35vh,
+        xxl: 40vh
+);
+
+@mixin make-map-responsive() {
+  //width: 100%;
+  height: 40vh;
+}
+
+.map-responsive {
+  // 100% wide
+  @include make-map-responsive();
+}
+
+
+@each $breakpoint, $container-max-width in $container-max-widths {
+  @media (max-width: $container-max-width) {
+    .map-responsive {
+      @include make-map-responsive();
+      max-height: map-get($container-max-heights, $breakpoint);
+      min-height: map-get($container-max-heights, $breakpoint);
+    }
+  }
+}
+
+.map-container {
+  //z-index: 0;
+  max-width: $max-content-width;
+}

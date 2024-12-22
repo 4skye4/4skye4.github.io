@@ -1,0 +1,27 @@
+$container-max-heights: (
+        sm: 15vh,
+        md: 20vh,
+        lg: 25vh,
+        xl: 30vh,
+        xxl: 30vh
+);
+
+@mixin make-jumbo-responsive() {
+  width: 100%;
+}
+
+.jumbo-responsive {
+  // 100% wide
+  @include make-jumbo-responsive();
+}
+
+
+@each $breakpoint, $container-max-width in $container-max-widths {
+  @media (min-width: $container-max-width) {
+    .jumbo-responsive {
+      @include make-jumbo-responsive();
+      max-height: map-get($container-max-heights, $breakpoint);
+      min-height: map-get($container-max-heights, $breakpoint);
+    }
+  }
+}

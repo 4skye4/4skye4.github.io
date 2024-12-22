@@ -1,0 +1,33 @@
+@import 'common';
+
+$container-max-heights: (
+        xs: 25vh,
+        sm: 25vh,
+        md: 35vh,
+        lg: 60vh,
+        xl: 60vh,
+        xxl: 60vh
+);
+
+@mixin make-img-responsive() {
+  width: 100%;
+  height: 60vh;
+  // TODO: DONE obrazek wykadrowac na srodek
+  background-size: cover !important;
+  background-position: center center !important;
+}
+
+.img-bg-responsive {
+  @include make-img-responsive();
+}
+
+@each $breakpoint, $container-max-width in $container-max-widths {
+  @media (min-width: $container-max-width) {
+    .img-bg-responsive {
+      @include make-img-responsive();
+      height: map-get($container-max-heights, $breakpoint);
+      max-height: map-get($container-max-heights, $breakpoint);
+      min-height: map-get($container-max-heights, $breakpoint);
+    }
+  }
+}

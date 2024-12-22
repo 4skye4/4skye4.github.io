@@ -1,0 +1,35 @@
+<head>
+    <link rel="stylesheet"
+          href="/assets/leaflet/leaflet.css"/>
+    <script src="/assets/leaflet/leaflet.js">
+    </script>
+</head>
+
+<div class="card col-md-10 mx-md-auto map-container my-3">
+    <div id="map"
+         class="map-responsive"></div>
+</div>
+
+<script>
+    // Creating map options
+    var mapOptions = {
+        // center: [78.65513, 16.32770],
+        center: [51.807737, 20.473165],
+        zoom: !L.Browser.mobile ? 15 : 14,
+        scrollWheelZoom: false,
+        dragging: !L.Browser.mobile,
+        tap: !L.Browser.mobile
+    }
+    // Creating a map object
+    var map = new L.map('map', mapOptions);
+    // Creating a Layer object
+    var layer = new L.TileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png');
+    // Adding layer to the map
+    map.addLayer(layer);
+
+    let marker = new L.Marker([51.807968, 20.474235]);
+    marker.addTo(map);
+
+    // let marker2 = new L.Marker([51.800055, 20.528423]);
+    // marker2.addTo(map);
+</script>

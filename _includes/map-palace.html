@@ -1,0 +1,37 @@
+<head>
+    <link rel="stylesheet"
+          href="/assets/leaflet/leaflet.css"/>
+    <script src="/assets/leaflet/leaflet.js">
+    </script>
+</head>
+
+<div class="card col-md-10 mx-md-auto map-container my-3">
+    <div id="mapPalace"
+         class="map-responsive">
+<!--        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4934.676216770517!2d20.5284515!3d51.7999824!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47191326c2cb1a71%3A0xdccfcd24670689f2!2sPa%C5%82ac%20Chojnata%2C%20Wola-Chojnata%2059%2C%2096-230%20Wola-Chojnata!5e0!3m2!1spl!2spl!4v1734794566246!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+    </div>
+</div>
+
+<script>
+    // Creating map options
+    var mapOptions2 = {
+        // center: [78.65513, 16.32770],
+        center: [51.79951, 20.52245],
+        zoom: !L.Browser.mobile ? 15 : 14,
+        scrollWheelZoom: false,
+        dragging: !L.Browser.mobile,
+        tap: !L.Browser.mobile
+    }
+    // Creating a map object
+    var map2 = new L.map('mapPalace', mapOptions2);
+    // Creating a Layer object
+    var layer2 = new L.TileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png');
+    // Adding layer to the map
+    map2.addLayer(layer2);
+
+    // let marker3 = new L.Marker([51.807968, 20.474235]);
+    // marker3.addTo(map2);
+
+    let marker4 = new L.Marker([51.800055, 20.528423]);
+    marker4.addTo(map2);
+</script>
