@@ -2,24 +2,30 @@
 <header id="header"{% if page.layout == 'landing' %} class="alt"{% endif %}>
   <h1><a href="{{ site.baseurl }}/index.html">{{ site.title }}</a></h1>
   <nav id="nav">
-<!--    <ul>-->
-<!--      <li class="special">-->
-<!--        <a href="#menu" class="menuToggle"><div class="container">Menu<div class="icon"></div></div></a>-->
-<!--        <div id="menu">-->
-<!--          <ul>-->
-<!--            <li><a href="index.html">Home</a></li>-->
-<!--&lt;!&ndash;            {% for my_page in site.pages %}&ndash;&gt;-->
-<!--&lt;!&ndash;            {% if my_page.title %}&ndash;&gt;-->
-<!--&lt;!&ndash;            <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>&ndash;&gt;-->
-<!--&lt;!&ndash;            {% endif %}&ndash;&gt;-->
-<!--&lt;!&ndash;            {% endfor %}&ndash;&gt;-->
-<!--&lt;!&ndash;            <li><a href="#">Sign Up</a></li>&ndash;&gt;-->
-<!--&lt;!&ndash;            <li><a href="#">Log In</a></li>&ndash;&gt;-->
-<!--&lt;!&ndash;            <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}"&ndash;&gt;-->
-<!--&lt;!&ndash;                   class="icon fa-feed"> RSS Feed</a></li>&ndash;&gt;-->
-<!--          </ul>-->
-<!--        </div>-->
-<!--      </li>-->
-<!--    </ul>-->
+    <ul>
+      <li class="special">
+        <a href="#menu" class="menuToggle"><div class="container">Menu<div class="icon"></div></div></a>
+        <div id="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#churchImg">Ślub</a></li>
+            <li><a href="#palaceImg">Wesele</a></li>
+            <li><a href="#moneyImg">Fundacja</a></li>
+            <li><a href="#accomodation">Noclegi</a></li>
+            <li><a href="#timePlan">Plan</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+<!--            {% for my_page in site.pages %}-->
+<!--            {% if my_page.title %}-->
+<!--            <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>-->
+<!--            {% endif %}-->
+<!--            {% endfor %}-->
+<!--            <li><a href="#">Sign Up</a></li>-->
+<!--            <li><a href="#">Log In</a></li>-->
+<!--            <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}"-->
+<!--                   class="icon fa-feed"> RSS Feed</a></li>-->
+          </ul>
+        </div>
+      </li>
+    </ul>
   </nav>
 </header>
