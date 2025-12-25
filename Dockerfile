@@ -1,5 +1,5 @@
 # Use a base image with Ruby and Jekyll preinstalled
-FROM jvconseil/jekyll-docker:latest
+FROM jvconseil/jekyll-docker:4.0
 
 # Set the working directory inside the container
 WORKDIR /srv/jekyll
