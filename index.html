@@ -2,226 +2,249 @@
 layout: landing
 ---
 
-
 <!-- Banner -->
 <section id="banner">
-    <div class="inner">
-        <!--        TODO: DONE not capitalize for "I"-->
-        <h2 style="font-family: 'Gwendolyn', sans-serif; text-transform: none !important;">{{ site.title }}</h2>
-        <!--        <p>{{ site.description | markdownify }}</p>-->
-        <p>14 czerwca 2025</p>
-        <!--        <ul class="actions">-->
-        <!--            <li><a href="#"-->
-        <!--                   class="button special">Activate</a></li>-->
-        <!--        </ul>-->
-    </div>
-    <a href="#one"
-       class="more">Więcej informacji</a>
+  <div class="inner">
+    <!--        TODO: DONE not capitalize for "I"-->
+    <h2
+      style="
+        font-family: 'Gwendolyn', sans-serif;
+        text-transform: none !important;
+      "
+    >
+      {{ site.title }}
+    </h2>
+    <!--        <p>{{ site.description | markdownify }}</p>-->
+    <p>14 czerwca 2025</p>
+    <!--        <ul class="actions">-->
+    <!--            <li><a href="#"-->
+    <!--                   class="button special">Activate</a></li>-->
+    <!--        </ul>-->
+  </div>
+  <a href="#one" class="more">Więcej informacji</a>
 </section>
 
 <!-- One -->
-<section id="one"
-         class="wrapper style1 special">
-    <div class="inner">
-        <!--        TODO: DONE wiekszy font na cala stronke -->
-        <header class="major">
-            <h2>Drodzy goście</h2>
-            <p>Sandra Turlińska oraz Rafał Kozieł wraz z&nbsp;Rodzicami mają zaszczyt zaprosić na&nbsp;swój Ślub,
-                <br>
-                który odbędzie się 14&nbsp;czerwca&nbsp;2025 roku o&nbsp;godzinie 16:00 w&nbsp;Sanktuarium Matki&nbsp;Bożej&nbsp;Miłosiernej
-                w&nbsp;Białej&nbsp;Rawskiej.
-                <br>
-                Po ceremonii zapraszamy do&nbsp;wspólnego świętowania.
-                <br>
-                Przyjęcie weselne odbędzie się w&nbsp;Pałacu&nbsp;Chojnata w&nbsp;Woli-Chojnata&nbsp;59.</p>
-            <p><b>Drodzy Goście, uprzejmie prosimy o&nbsp;potwierdzenie przybycia do dnia 30&nbsp;kwietnia&nbsp;2025&nbsp;roku.</b>
-            </p>
-        </header>
-        <!--        <ul class="icons major">-->
-        <!--            <li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>-->
-        <!--            <li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>-->
-        <!--            <li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>-->
-        <!--        </ul>-->
-    </div>
+<section id="one" class="wrapper style1 special">
+  <div class="inner">
+    <!--        TODO: DONE wiekszy font na cala stronke -->
+    <header class="major">
+      <h2>Drodzy goście</h2>
+      <p>
+        Sandra Turlińska oraz Rafał Kozieł wraz z&nbsp;Rodzicami mają zaszczyt
+        zaprosić na&nbsp;swój Ślub,
+        <br />
+        który odbędzie się 14&nbsp;czerwca&nbsp;2025 roku o&nbsp;godzinie 16:00
+        w&nbsp;Sanktuarium Matki&nbsp;Bożej&nbsp;Miłosiernej
+        w&nbsp;Białej&nbsp;Rawskiej.
+        <br />
+        Po ceremonii zapraszamy do&nbsp;wspólnego świętowania.
+        <br />
+        Przyjęcie weselne odbędzie się w&nbsp;Pałacu&nbsp;Chojnata
+        w&nbsp;Woli-Chojnata&nbsp;59.
+      </p>
+      <p>
+        <b
+          >Drodzy Goście, uprzejmie prosimy o&nbsp;potwierdzenie przybycia do
+          dnia 30&nbsp;kwietnia&nbsp;2025&nbsp;roku.</b
+        >
+      </p>
+    </header>
+    <!--        <ul class="icons major">-->
+    <!--            <li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>-->
+    <!--            <li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>-->
+    <!--            <li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>-->
+    <!--        </ul>-->
+  </div>
 </section>
 
-<section id="mapSection"
-         class="wrapper alt style2">
+<section id="mapSection" class="wrapper alt style2">
+  <section id="churchImg" class="wrapper style4 img-bg-responsive">
+    <div class="inner"></div>
+  </section>
 
-    <section id="churchImg"
-             class="wrapper style4 img-bg-responsive">
-        <div class="inner">
+  <section class="spotlight">
+    <div class="image">{% include map.html %}</div>
+    <div class="content py-lg-5 my-lg-5">
+      <h2>Ślub</h2>
+      <div class="d-flex flex-column gap-2 mb-5">
+        Ślub odbędzie się 14 czerwca 2025 roku o godzinie 16:00 w Sanktuarium
+        Matki Bożej Miłosiernej w Białej Rawskiej.
+        <!--                <b>Sanktuarium Matki&nbsp;Bożej&nbsp;Miłosiernej w&nbsp;Białej&nbsp;Rawskiej</b>-->
+        <div
+          class="flex-column gap-1 justify-content-between align-self-lg-start align-items-center"
+        >
+          <!--                    TODO: DONE dziwny margines -->
+          <!--                    TODO: DONE wiekszy font ogolnie na stronce -->
+          Adres: plac Kościelny 4, 96-230 Biała Rawska
+          <div
+            class="d-flex flex-column justify-content-center gap-4 mt-4 flex-md-row"
+          >
+            <a
+              href="https://maps.app.goo.gl/BdDiE9PHvxGX4gJx5"
+              target="_blank"
+              class="button small"
+              >Google maps</a
+            >
+            <a
+              href="https://maps.app.goo.gl/BdDiE9PHvxGX4gJx5"
+              target="_blank"
+              class="button small"
+              >Sanktuarium</a
+            >
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
+  <section id="palaceImg" class="img-bg-responsive wrapper style4">
+    <div class="inner"></div>
+  </section>
 
-    <section class="spotlight">
-        <div class="image">
-            {% include map.html %}
+  <section class="spotlight">
+    <div class="image">{% include map-palace.html %}</div>
+    <div class="content py-lg-5 my-lg-5">
+      <h2>Wesele</h2>
+      <div class="d-flex flex-column gap-2 mb-5">
+        Po ceremonii zapraszamy do wspólnego świętowania. Przyjęcie weselne
+        odbędzie się w Pałacu Chojnata w Woli-Chojnata 59.
+        <div
+          class="flex-column gap-1 justify-content-between align-self-lg-start align-items-center"
+        >
+          Adres: Wola-Chojnata 59, 96-230 Wola-Chojnata
+          <div
+            class="d-flex flex-column justify-content-center gap-4 mt-4 flex-md-row"
+          >
+            <a
+              href="https://maps.app.goo.gl/1T3CPU9SUdqD13UW7"
+              target="_blank"
+              class="button small"
+              >Google maps</a
+            >
+            <a
+              href="https://palacchojnata.pl/ "
+              target="_blank"
+              class="button small"
+              >Pałac Chojnata</a
+            >
+          </div>
         </div>
-        <div class="content py-lg-5 my-lg-5">
-            <h2>Ślub</h2>
-            <div class="d-flex flex-column gap-2 mb-5">
-                Ślub odbędzie się 14 czerwca 2025 roku o godzinie 16:00 w Sanktuarium Matki Bożej Miłosiernej w Białej
-                Rawskiej.
-                <!--                <b>Sanktuarium Matki&nbsp;Bożej&nbsp;Miłosiernej w&nbsp;Białej&nbsp;Rawskiej</b>-->
-                <div class="flex-column gap-1 justify-content-between align-self-lg-start align-items-center">
-                    <!--                    TODO: DONE dziwny margines -->
-                    <!--                    TODO: DONE wiekszy font ogolnie na stronce -->
-                    Adres: plac Kościelny 4, 96-230 Biała Rawska
-                    <div class="d-flex flex-column justify-content-center gap-4 mt-4 flex-md-row">
-                        <a href="https://maps.app.goo.gl/BdDiE9PHvxGX4gJx5"
-                           target="_blank"
-                           class="button small">Google maps</a>
-                        <a href="https://maps.app.goo.gl/BdDiE9PHvxGX4gJx5"
-                           target="_blank"
-                           class="button small">Sanktuarium</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="palaceImg"
-             class="img-bg-responsive wrapper style4">
-        <div class="inner">
-        </div>
-    </section>
-
-    <section class="spotlight">
-        <div class="image">
-            {% include map-palace.html %}
-        </div>
-        <div class="content py-lg-5 my-lg-5">
-            <h2>Wesele</h2>
-            <div class="d-flex flex-column gap-2 mb-5">
-                Po ceremonii zapraszamy do wspólnego świętowania. Przyjęcie weselne odbędzie się w Pałacu Chojnata w
-                Woli-Chojnata 59.
-                <div class="flex-column gap-1 justify-content-between align-self-lg-start align-items-center">
-                    Adres: Wola-Chojnata 59, 96-230 Wola-Chojnata
-                    <div class="d-flex flex-column justify-content-center gap-4 mt-4 flex-md-row">
-                        <a href="https://maps.app.goo.gl/1T3CPU9SUdqD13UW7"
-                           target="_blank"
-                           class="button small">Google maps</a>
-                        <a href="https://palacchojnata.pl/ "
-                           target="_blank"
-                           class="button small">Pałac Chojnata</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="moneyImg"
-             class="img-bg-responsive wrapper style4">
-        <div class="inner">
-            <h2>Zamiast kwiatów</h2>
-        </div>
-    </section>
-
+  <section id="moneyImg" class="img-bg-responsive wrapper style4">
+    <div class="inner">
+      <h2>Zamiast kwiatów</h2>
+    </div>
+  </section>
 </section>
 
-<section id="charity"
-         class="wrapper style1 with-separator special">
-    <div class="inner">
-        <header class="major">
-            <h2>Fundacja</h2>
-            <p>Wspólnie z Wami pragniemy pomóc. Będziemy wdzięczni, jeśli zamiast kwiatów, zdecydujecie się wesprzeć
-                naszą zbiórkę na rzecz Fundacji Dom w Łodzi. Pieniądze będziemy zbierać do puszki przed kościołem.</p>
-            <p>Fundacja „Dom w Łodzi” działa od sierpnia 2006 roku i jest organizacją pożytku publicznego. Powstała po
-                to, aby pomagać tym, którzy tej pomocy potrzebują bardziej niż ktokolwiek inny. Wspiera dzieci, którym
-                los odebrał nie tylko zdrowie, ale i miłość osób najbliższych. Jej celem jest stworzenie domu, w którym
-                najmłodsi zaznają bliskości, miłości i otrzymają szansę na szczęśliwe i zdrowe życie.</p>
-            <a href="https://www.domwlodzi.org/pl/"
-               target="_blank"
-               class="button small mb-3">Więcej o fundacji</a>
-        </header>
-    </div>
+<section id="charity" class="wrapper style1 with-separator special">
+  <div class="inner">
+    <header class="major">
+      <h2>Fundacja</h2>
+      <p>
+        Wspólnie z Wami pragniemy pomóc. Będziemy wdzięczni, jeśli zamiast
+        kwiatów, zdecydujecie się wesprzeć naszą zbiórkę na rzecz Fundacji Dom w
+        Łodzi. Pieniądze będziemy zbierać do puszki przed kościołem.
+      </p>
+      <p>
+        Fundacja „Dom w Łodzi” działa od sierpnia 2006 roku i jest organizacją
+        pożytku publicznego. Powstała po to, aby pomagać tym, którzy tej pomocy
+        potrzebują bardziej niż ktokolwiek inny. Wspiera dzieci, którym los
+        odebrał nie tylko zdrowie, ale i miłość osób najbliższych. Jej celem
+        jest stworzenie domu, w którym najmłodsi zaznają bliskości, miłości i
+        otrzymają szansę na szczęśliwe i zdrowe życie.
+      </p>
+      <a
+        href="https://www.domwlodzi.org/pl/"
+        target="_blank"
+        class="button small mb-3"
+        >Więcej o fundacji</a
+      >
+    </header>
+  </div>
 </section>
 
-<section id="accomodation"
-         class="wrapper style1 with-separator special">
-    <div class="inner">
-        <header class="major">
-            <h2>Noclegi</h2>
-            <p>Zapewniamy noclegi dla wszystkich, którzy wyrażą taką chęć. Więcej informacji pojawi się bliżej terminu
-                uroczystości.</p>
-            <p><b>Prosimy o potwierdzenie obecności do 30 kwietnia 2025.</b></p>
-        </header>
-    </div>
+<section id="accomodation" class="wrapper style1 with-separator special">
+  <div class="inner">
+    <header class="major">
+      <h2>Noclegi</h2>
+      <p>
+        Zapewniamy noclegi dla wszystkich, którzy wyrażą taką chęć. Więcej
+        informacji pojawi się bliżej terminu uroczystości.
+      </p>
+      <p><b>Prosimy o potwierdzenie obecności do 30 kwietnia 2025.</b></p>
+    </header>
+  </div>
 </section>
 
-<section id="timePlan"
-         class="wrapper style1 with-separator special">
-    <div class="inner">
-        <header class="major">
-            <h2>Plan</h2>
-            <p>Szczegółowy plan pojawi się bliżej terminu uroczystości.</p>
-        </header>
-    </div>
+<section id="timePlan" class="wrapper style1 with-separator special">
+  <div class="inner">
+    <header class="major">
+      <h2>Plan</h2>
+      <p>Szczegółowy plan pojawi się bliżej terminu uroczystości.</p>
+    </header>
+  </div>
 </section>
 
-<section id="contact"
-         class="wrapper style1 special">
-    <div class="inner">
-        <header class="major">
-            <h2>Kontakt</h2>
-            <p></p>
-            <p>W razie pytań zachęcamy do kontaktu.</p>
+<section id="contact" class="wrapper style1 special">
+  <div class="inner">
+    <header class="major">
+      <h2>Kontakt</h2>
+      <p></p>
+      <p>W razie pytań zachęcamy do kontaktu.</p>
 
-            <a id="showContactInfo"
-               class="button small">Pokaż dane kontaktowe</a>
+      <a id="showContactInfo" class="button small">Pokaż dane kontaktowe</a>
 
-            <div id="contactInfo"></div>
-        </header>
-    </div>
+      <div id="contactInfo"></div>
+    </header>
+  </div>
 
-    <script>
-        $('#showContactInfo').click(function () {
-            $('#showContactInfo').hide();
-            $('#contactInfo').html(info);
-            $('#contact ul li').each(function () {
-                let text = $(this).text();
-                // let encodedText = rot(11, 5, text);
-                let encodedText = rot(-11, -5, text);
-                $(this).text(encodedText);
-            });
-        });
-        $('#contact').ready(function () {
-            $('#contact ul li').each(function () {
-                let text = $(this).text();
-                // let encodedText = rot(11, 5, text);
-                let encodedText = rot(-11, -5, text);
-                $(this).text(encodedText);
-            });
-        });
-    </script>
+  <script>
+    $("#showContactInfo").click(function () {
+      $("#showContactInfo").hide();
+      $("#contactInfo").html(info);
+      $("#contact ul li").each(function () {
+        let text = $(this).text();
+        // let encodedText = rot(11, 5, text);
+        let encodedText = rot(-11, -5, text);
+        $(this).text(encodedText);
+      });
+    });
+    $("#contact").ready(function () {
+      $("#contact ul li").each(function () {
+        let text = $(this).text();
+        // let encodedText = rot(11, 5, text);
+        let encodedText = rot(-11, -5, text);
+        $(this).text(encodedText);
+      });
+    });
+  </script>
 </section>
 
-<section id="footImg"
-         class="wrapper style4">
-    <div class="inner">
-    </div>
+<section id="footImg" class="wrapper style4">
+  <div class="inner"></div>
 </section>
 
 <script>
-    $('document').ready(function () {
-        $('.leaflet-control-attribution').hide();
-        $('#banner').addClass('ready');
-    });
-
+  $("document").ready(function () {
+    $(".leaflet-control-attribution").hide();
+    $("#banner").addClass("ready");
+  });
 </script>
 
 <script type="module">
-    import SimpleParallax from "/assets/js/simpleparallax/index.js";
+  import SimpleParallax from "/assets/js/simpleparallax/index.js";
 
-    // if (skel.vars.mobile) {
-        $('.img-bg-responsive').addClass('parallax-img');
-    // }
-    const image = document.getElementsByClassName('parallax-img');
-    new SimpleParallax(image, {
-        scale: '1.2',
-        delay: 0
-    });
+  // if (skel.vars.mobile) {
+  $(".img-bg-responsive").addClass("parallax-img");
+  // }
+  const image = document.getElementsByClassName("parallax-img");
+  new SimpleParallax(image, {
+    scale: "1.2",
+    delay: 0,
+  });
 </script>
