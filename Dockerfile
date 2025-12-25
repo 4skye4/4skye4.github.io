@@ -4,11 +4,14 @@ FROM jvconseil/jekyll-docker:4.0
 # Set the working directory inside the container
 WORKDIR /srv/jekyll
 
-# Copy the local theme files into the container
-COPY . .
+# Copy Gemfile first to avoid installation each time
+COPY Gemfile Gemfile.lock .
 
 # Install necessary gems
 RUN bundle install
+
+# Copy sources
+COPY . .
 
 # Expose Jekyll's default port
 EXPOSE 4000
