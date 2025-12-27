@@ -5,7 +5,7 @@ FROM jvconseil/jekyll-docker:4.0
 WORKDIR /srv/jekyll
 
 # Copy Gemfile first to avoid installation each time
-COPY Gemfile Gemfile.lock .
+COPY Gemfile Gemfile.lock ./
 
 # Install necessary gems
 RUN bundle install
