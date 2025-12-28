@@ -6,23 +6,14 @@
   Jekyll build mod
 -->
 <html>
-
-  {% include head.html %}
-  {% include scripts.html %}
+  {% include head.html %} {% include scripts.html %}
 
   <body class="landing">
-
     <!-- Page Wrapper -->
-    <div id="page-wrapper" style="height: 100vh; overflow: hidden;">
+    <div id="page-wrapper" style="height: 100vh">
+      {% include header.html %} {{ content }}
 
-      {% include header.html %}
-
-      {{ content }}
-
-<!--      {% include footer.html %}-->
-
+      <!--      {% include footer.html %}-->
     </div>
-
   </body>
-
 </html>

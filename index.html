@@ -2,25 +2,14 @@
 layout: landing
 ---
 
-<!-- <span>123</span>
-<div style="display: flex;
-    width: 100%;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;">
-    <img src="/assets/imgs/inspirational.jpeg"
-         style="display: block; margin: auto; max-width: 100%; height: auto;">
-</div> -->
-<section id="banner">
+<!-- <section id="banner"> -->
+  <section id="banner" style="background-image: url('{{ "/assets/imgs/inspirational.jpeg" | relative_url }}');">
   <div class="inner">
     <!--        TODO: DONE not capitalize for "I"-->
-    <h2
-      style="
-        /* font-family: 'Gwendolyn', sans-serif; */
+    <h2 style="
+        font-family: 'Gwendolyn', sans-serif;
         text-transform: none !important;
-      "
-    >
+      " >
       {{ site.title }}
     </h2>
     <!--        <p>{{ site.description | markdownify }}</p>-->
@@ -67,7 +56,6 @@ layout: landing
       </p>
     </header>
   </div>
-  <a href="#offer" class="more">Więcej informacji</a>
 </section>
 
 <!-- jak bedzie to zdjecie dodać -->
@@ -99,6 +87,7 @@ layout: landing
         <dt><b>Obsługa geodezyjna inwestycji</b></dt>
         <dd>- kompleksowa obsługa budów na każdym etapie realizacji.</dd>
       </dl>
+      <br />
 
       <h3><b>Miernictwo i geologia górnicza</b></h3>
       <dl>
@@ -121,7 +110,6 @@ layout: landing
       </dl>
     </header>
   </div>
-  <a href="#contact" class="more">Więcej informacji</a>
   <br />
 </section>
 
@@ -131,13 +119,17 @@ layout: landing
     <header class="major">
       <h2>Kontakt</h2>
       <p>
-        Biuro Usług Mierniczych i Geodezyjnych „BUMIG” Tomasz Podziemski&nbsp;
+        Biuro&nbsp; Usług&nbsp; Mierniczych&nbsp; i&nbsp; Geodezyjnych&nbsp;
+        „BUMIG”&nbsp; Tomasz&nbsp; Podziemski&nbsp;
         <br />
-        Ul. 10 Dywizji 24/1&nbsp;
+        Ul.&nbsp; 10&nbsp; Dywizji&nbsp; 24/1&nbsp;
         <br />
-        59-600 Lwówek Śląski&nbsp;
+        59-600&nbsp; Lwówek&nbsp; Śląski&nbsp;
       </p>
-      <p>W razie pytań zachęcamy do kontaktu.</p>
+      <p>
+        W&nbsp; razie&nbsp; pytań&nbsp; zachęcamy&nbsp; do&nbsp;
+        kontaktu&nbsp;.&nbsp;
+      </p>
 
       <!-- <a id="showContactInfo" class="button small">Pokaż dane kontaktowe</a> -->
 
@@ -147,9 +139,10 @@ layout: landing
             <td>
               Geodezja i Miernictwo górnicze
               <br />
-              Email:
+              Email:&nbsp;
               <a href="mailto:bumig@o2.pl">bumig@o2.pl</a>
               <br />
+              Email:&nbsp;
               <a href="mailto:bumig@bumig.pl">bumig@bumig.pl</a>
               <br />
               Tel 663 771400&nbsp;
@@ -157,7 +150,8 @@ layout: landing
             <td>
               Geologia górnicza
               <br />
-              Email: geolog@bumig.pl
+              Email:&nbsp;
+              <a href="mailto:geolog@bumig.pl">geolog@bumig.pl</a>
               <br />
               Tel 601 934 436&nbsp;
             </td>
