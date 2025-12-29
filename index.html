@@ -4,12 +4,12 @@ layout: landing
 
 <!-- <section id="banner"> -->
   <section id="banner" style="background-image: url('{{ "/assets/imgs/inspirational.jpeg" | relative_url }}');">
+    
   <div class="inner">
     <!--        TODO: DONE not capitalize for "I"-->
-    <h2 style="
-        font-family: 'Gwendolyn', sans-serif;
-        text-transform: none !important;
-      " >
+    <!-- <h2 style="font-family:'Gwendolyn', sans-serif; text-transform:none !important;" > -->
+    <h2> 
+      <!-- h2 font -->
       {{ site.title }}
     </h2>
     <!--        <p>{{ site.description | markdownify }}</p>-->
@@ -116,21 +116,39 @@ layout: landing
 <!-- kontakt -->
 <section id="contact" class="wrapper style1 special">
   <div class="inner">
-    <header class="major">
-      <h2>Kontakt</h2>
-      <p>
-        Biuro&nbsp; Usług&nbsp; Mierniczych&nbsp; i&nbsp; Geodezyjnych&nbsp;
-        „BUMIG”&nbsp; Tomasz&nbsp; Podziemski&nbsp;
-        <br />
-        Ul.&nbsp; 10&nbsp; Dywizji&nbsp; 24/1&nbsp;
-        <br />
-        59-600&nbsp; Lwówek&nbsp; Śląski&nbsp;
-      </p>
-      <p>
-        W&nbsp; razie&nbsp; pytań&nbsp; zachęcamy&nbsp; do&nbsp;
-        kontaktu&nbsp;.&nbsp;
-      </p>
-
+    <section>
+      <header class="major">
+        <h2>Kontakt</h2>
+        <p>
+          Biuro&nbsp; Usług&nbsp; Mierniczych&nbsp; i&nbsp; Geodezyjnych&nbsp;
+          „BUMIG” Tomasz&nbsp; Podziemski
+        <!-- </p> -->
+          <br />
+        <!-- <p> -->
+          Ul.&nbsp; 10&nbsp; Dywizji&nbsp; 24/1&nbsp;
+          <br />
+          59&nbsp;-&nbsp;600&nbsp; Lwówek&nbsp; Śląski&nbsp;
+        </p>
+        <p>
+          W&nbsp; razie&nbsp; pytań&nbsp; zachęcamy&nbsp; do&nbsp;
+          kontaktu&nbsp;.&nbsp;
+        </p>
+        <div class="image" style="height: 400px; width: 100%;">
+          {% include map.html %}
+           <div
+            class="d-flex flex-column justify-content-center gap-4 mt-4 flex-md-row"
+          >
+            <a
+              href="https://maps.app.goo.gl/ouY9VZDkRuKxXwYf8"
+              target="_blank"
+              class="button small"
+              >Google maps</a
+            >
+            
+          </div>
+        </div>
+       
+    </section>
       <!-- <a id="showContactInfo" class="button small">Pokaż dane kontaktowe</a> -->
 
       <div id="contactInfo">
