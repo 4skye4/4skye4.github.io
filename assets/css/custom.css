@@ -4,20 +4,32 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-/* #header {
-  height: auto;
-  min-height: 3.25em;
-  line-height: 1.25;
+/* #banner h2 {
+  color: #0000;
+}
+
+#banner p {
+  color: #0000;
+} */
+/* #banner::before {
+  background-color: rgba(230, 230, 230, 0.95);
 } */
 
-/* #header h1 {
-  padding-right: 4.5em;
-  padding-top: 0.6em;
-  padding-bottom: 0.6em;*/
-/* text-align: center; */
-/*} */
+#banner {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
 
-/* #header h1 a {
-  white-space: normal;
-  display: inline-block;
-}  */
+#banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+#banner .inner {
+  position: relative;
+  z-index: 2;
+}
