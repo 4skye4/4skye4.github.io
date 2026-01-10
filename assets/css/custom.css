@@ -4,6 +4,10 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+/* section {
+  background-color: #b8ddeb; 
+  background-color: #1500eb;
+} */
 #banner {
   position: relative;
   background-size: cover;
@@ -13,7 +17,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 #banner .inner {
